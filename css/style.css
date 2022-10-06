@@ -1,0 +1,524 @@
+*{
+	box-sizing:border-box;
+	margin:0px;
+	padding:0px;
+	font-family: 'Podkova', serif;
+}
+body {
+   background-image: url("../images/background.jpg");
+   background-repeat: repeat;
+   overflow-x: hidden;
+   overflow-y: scroll;
+}
+.pozicija{
+	margin:0px 150px;
+}
+h2{
+	margin:20px 300px;;
+	color:#000000;
+	font-size:35px;
+}
+.cleaner{
+	clear:both;
+}
+
+/*header*/
+
+#header-top{
+	width:1280px;
+	height:120px;
+	margin:0px auto;
+}
+#logo{
+	width:80px;
+	height:116px;
+	float:left;
+	background-image:url(../images/logo.png);
+}
+#naslov{
+	padding:20px;
+	width:350px;
+	margin-left:175px;
+	margin-top:10px;
+	float:left;
+	font-size:23px;
+	color:rgb(00,128,00);
+}
+#mreze a{
+	text-decoration:none;
+}
+#mreze a:visited, #mreze a:link{
+	color:black;
+}
+#mreze a:hover{
+	color:blue;
+}
+#mreze a:active{
+	color:purple;
+}
+#mrezepretraga{
+	width:47%;
+	height:40px;
+	float:right;
+	padding:20px;
+	margin-top:25px;
+}
+i{
+	font-size:30px;
+	margin: 5px 3px;
+}
+#mreze{
+	width:250px;
+	height:40px;
+	border-right:2px solid #000000;
+	float:left;
+}
+#pretraga i{
+	font-size:20px;
+}
+#pretraga{
+	width:300px;
+	height:50px;
+	float:right;
+	padding:3px;
+}
+#termin{
+	height:25px;
+	font-size:15px;
+}
+
+/*navigacija*/
+
+#nav{
+	width:1280px;
+	height:50px;
+	margin:0px auto;
+	position:sticky;
+	top:0px;
+	z-index:3;
+}
+#meni{
+	margin-top:15px;
+	width:1280px;
+	height:50px;
+	background-color:rgba(139,0,0,0.7);
+}
+#meni ul{
+	list-style-type:none;
+	height:50px;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	align-items:stretch;
+}
+#meni li{
+	border-right:2px solid rgba(00,00,00,0.7);
+	border-left:2px solid rgba(00,00,00,0.7);
+	display:flex;
+	align-items:center;
+	justify-content:space-around;
+	flex-grow: 1;
+}
+#meni li:hover{
+	background-color:#666666;
+}
+#meni a{
+	text-decoration:none;
+	color:#ffffff;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	align-items:stretch;
+	flex-grow: 1;
+}
+
+/*sadrzaj*/
+
+#wrapper{
+	width:1280px;
+	margin:0px auto;
+	display:flex;
+	flex-direction:row;
+	align-items:stretch;
+}
+aside{
+	width:10%;
+	/*min-height:1024px;*/
+	background-color:rgba(00,00,00,0.7);
+	color:#A9A9A9;
+}
+#indexpic{
+	background-image:url("../images/indexpic.jpg");
+	width:921px;
+	height:238px;
+	
+}
+main{
+	width: 80%;
+	/*min-height:1024px;*/
+	float:left;
+	padding:50px;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:center;
+	allign-items:stretch;
+	border-right:3px solid rgba(139,0,0,0.7);
+	border-left:3px solid rgba(139,0,0,0.7);
+	text-align:center;
+}
+main.content{
+	width: 1174px;
+	border-left:3px solid rgba(139,0,0,0.7);
+	border-right:3px solid rgba(139,0,0,0.7);
+	margin:0px auto;
+	background-color:rgba(00,128,00,0.6);
+	display:block;
+	text-align:left;
+	min-height:0px;
+}
+main.content p{
+	color:white;
+	margin-bottom:10px;
+}
+wrapper.cont{
+	margin:0px 150px;
+}
+main.content h2{
+	text-shadow:none;
+	margin:0px auto;
+}
+#indexcontent{
+	width:100%;
+	height:100%;
+	position:relative;
+}
+#indexcontent h2{
+	color:#ffffff;
+	letter-spacing: 10px; 
+}
+#indexh2{
+	width:100%;
+	margin-top:150px;
+	position:absolute;
+}
+#index-h2{
+	margin:0px auto;
+	width:500px;
+	height:40px;
+	background-color:rgba(00,00,00,0.7);
+	text-align:center;
+}
+#indexcontent p{
+	color:#ffffff;
+	letter-spacing:1px;
+	font-size:15px;
+}
+#indextext{
+	width:100%;
+	margin-top:20px;
+	padding:20px;
+	text-align:center;
+	background-color:rgba(00,128,00,0.6);
+}
+main.content h3{
+	margin-right:300px;
+}
+#infoholder{
+	width:100%;
+	height:100%;
+	color:#ffffff;
+}
+#infoholder h2,main.content h2, #indexcontent h2{
+	margin:0px auto;
+	animation-duration: 2s;
+	animation-name: slidein2;
+}
+#informacije{
+	margin:0px auto;
+	margin-top:30px;
+	width:80%;
+	background-color:rgba(00,128,00,0.6);
+	text-align:center;
+	color:#ffffff;
+	padding:20px;
+}
+#infoholder div h3{
+	margin-bottom:10px;
+}
+#bio{
+	margin:0px auto;
+	height: 350px;
+	margin-top:30px;
+	background-color:rgba(139,0,0,0.5);
+	text-align:center;
+	color:#ffffff;
+	padding:40px;
+}
+#profile-pic{
+	width:265px;
+	height:250px;
+	background-image:url("../images/profile.jpg");
+	float:left;
+	
+} 
+#biography{
+	float:right;
+	width: 60%;
+	margin-top:10%;
+	
+}
+#submit{
+	margin-left:40%;
+	margin-top:50px;
+	width:100px;
+	height:20px;
+}
+main h2{
+	text-shadow:none;
+	width:100%;
+	animation-duration: 2s;
+	animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 33%;
+    width: 100%;
+  }
+}
+@keyframes slidein2 {
+  from {
+    margin-left: 33%;
+    width: 100%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+main figure{
+	width:30%;
+	height:400px;
+	margin:15px;
+	background-color:rgba(00,128,00,0.6);
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:center;
+	allign-items:stretch;
+	text-align:center;
+}
+main figure div.img{
+	width:180px;
+	height:135px;
+	background-image:url("../images/combinedimg.jpg");
+}
+main figure figcaption{
+	color:#ffffff;
+}
+main figure p{
+	color:#ffffff;
+}
+main figure a, main a{
+	text-decoration:none;
+	font-size:15px;
+	color:#A9A9A9;
+	border-top:2px solid rgba(139,00,00,0.7);
+}
+main.content a{
+	border-top:none;
+}
+.strana{
+	width: 100%;
+	text-align:center;
+}
+.strana a{
+	border-top:2px solid #000000;
+}
+main figure a:hover, main a:hover{
+	color:rgba(240,0,0,1);
+}
+fieldset{
+	background-color:rgba(00,128,00,0.8);
+	width:60%;
+	height:300px;
+	margin:0px auto;
+	text-align:left;
+	padding:30px;
+	
+}
+#ocena, #utisak{
+	width:100%;
+	margin-bottom:10px;
+}
+.sirina{
+	width:100%;
+}
+fieldset p{
+	text-align:left;
+}
+fieldset legend{
+	color:#000000;
+	text-shadow:none;
+	margin-left:20px;
+}
+label{
+}
+select{
+}
+textarea{
+	width:100%;
+	resize:none;
+}
+
+/*futer*/
+
+#footer{
+	width:1280px;
+	height:200px;
+	background-color:black;
+	margin:0px auto;
+	min-width:1280px;
+	position:relative;
+}
+#footernav ul{
+	list-style-type:none;
+}#footernav ul li{
+	display:inline;
+}
+#footernav a{
+	color:#ffffff;
+	text-decoration:none;
+}
+#footernav{
+	width:1280px;
+	position:absolute;
+	top:30%;
+	left:30%;
+	position:relative;
+}
+footer p{
+	position:absolute;
+	left:42%;
+	color:#ffffff;
+	bottom:45%;
+}
+footer p:last-child{
+	bottom:28%;
+	left:41%;
+}
+#logo2{
+	width:80px;
+	height:116px;
+	float:left;
+	background-image:url(../images/logo.png);
+	margin:40px 0px 0px 40px;
+}
+#naslov, #meni a, main figure figcaption, main figure p, main figure a, main a, main p, h2,#indexcontent h2, #infoholder div{
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+/*Pozicioniranje slika*/
+
+div.jedan{
+	
+}
+div.dva{
+	background-position: -180px 0px;
+}
+div.tri{
+	background-position: -360px 0px;
+}
+div.cetiri{
+	background-position: -480px 0px;
+}
+div.pet{
+	background-position: 0px -135px;
+}
+div.sest{
+	background-position: -180px -135px;
+}
+div.sedam{
+	background-position: -360px -135px;
+}
+div.osam{
+	background-position: -540px -135px;
+}
+div.devet{
+	background-position: 0px -270px;
+}
+div.deset{
+	background-position: -180px -270px;
+}
+div.jedanaest{
+	background-position: -360px -270px;
+}
+div.dvanaest{
+	background-position: -540px -270px;
+}
+div.trinaest{
+	background-position: 0px -405px;
+}
+div.cetrnaest{
+	background-position: -180px -405px;
+}
+div.petnaest{
+	background-position: -360px -405px;
+}
+div.sesnaest{
+	background-position: -540px -405px;
+}
+div.sedamnaest{
+	background-position: 0px -540px;
+}
+div.osamnaest{
+	background-position: -180px -540px;
+}
+div.devetnaest{
+	background-position: -360px -540px;
+}
+div.dvadeset{
+	background-position: -540px -540px;
+}
+div.dvadesetjedan{
+	background-position: 0px -675px;
+}
+div.dvadesetdva{
+	background-position: -180px -675px;
+}
+div.dvadesettri{
+	background-position: -360px -675px;
+}
+div.dvadesetcetiri{
+	background-position: -540px -675px;
+}
+div.dvadesetpet{
+	background-position: 0px -810px;
+}
+div.dvadesetsest{
+	background-position: -180px -810px;
+}
+div.dvadesetsedam{
+	background-position: -360px -810px;
+}
+div.dvadesetosam{
+	background-position: -540px -810px;
+}
+div.dvadesetdevet{
+	background-position: 0px -945px;
+}
+div.trideset{
+	background-position: -180px -945px;
+}
+div.tridesetjedan{
+	background-position: -360px -945px;
